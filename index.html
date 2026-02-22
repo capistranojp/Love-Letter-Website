@@ -13,7 +13,8 @@ body {
 }
 #image {
     margin-top: 20px;
-    max-width: 90%;
+    max-width: 25%;
+    max-height: 25%;
     border-radius: 15px;
     box-shadow: 0 0 20px #ff4d6d;
 }
@@ -38,21 +39,21 @@ iframe {
 <h2>💘 My love letter 💘</h2>
 
 <!-- Real couple image -->
-<img id="image" src="https://github.com/capistranojp/Love-Letter-Website/main/couple.jpg" alt="Couple Image">
+<img id="image" src="https://raw.githubusercontent.com/capistranojp/Love-Letter-Website/main/couple.jpg" alt="Couple Image">
+
+<div id="letter"></div>
 
 <!-- 🎶 Music: Uuwian from YouTube -->
 <div style="margin-top:30px;">
-  <h3>🎶 Music: Uuwian</h3>
-  <iframe width="100%" height="166"
-    src="https://www.youtube.com/embed/tVRfUqyDJyM=55"
-    title="Kyle Raphael - Libu-libong buwan (uuwian) (Official Lyric Video)"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
+  <h3>🎶 Music: About You - 1975</h3>
+  <iframe width="10%" height="45%"
+    src="https://www.youtube.com/embed/5qq8ONq0hl8?autoplay=1&loop=1&list=RD5qq8ONq0hl8"
+    title="About you"
+    frameborder="1"
     allowfullscreen>
   </iframe>
 </div>
 
-<div id="letter"></div>
 
 <script>
 const letterDiv = document.getElementById("letter");
@@ -65,7 +66,7 @@ window.onload = function() {
 function typeWriter(text, i = 0) {
     if (i < text.length) {
         letterDiv.innerHTML += text.charAt(i);
-        setTimeout(() => typeWriter(text, i + 1), 40);
+        setTimeout(() => typeWriter(text, i + 1), 75);
     }
 }
 
@@ -82,6 +83,92 @@ From the bottom of my heart, I'm glad to know you. Yes, my heart's broken, but m
 </body>
 </html>
 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>My letter for my Honey🥹🫶</title>
+<style>
+body {
+    background: black;
+    color: #ff4d6d;
+    font-family: monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#image {
+    margin-top: 20px;
+    max-width: 25%;
+    max-height: 25%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ff4d6d;
+}
+#letter {
+    margin-top: 30px;
+    font-size: 24px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+h2, h3 {
+    margin: 20px 0 10px 0;
+}
+iframe {
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>💘 My love letter 💘</h2>
+
+<!-- Real couple image -->
+<img id="image" src="https://raw.githubusercontent.com/capistranojp/Love-Letter-Website/main/couple.jpg" alt="Couple Image">
+
+<div id="letter"></div>
+
+<!-- 🎶 Music: Uuwian from YouTube -->
+<div style="margin-top:30px;">
+  <h3>🎶 Music: About You - 1975</h3>
+  <iframe width="10%" height="45%"
+    src="https://www.youtube.com/embed/5qq8ONq0hl8?autoplay=1&loop=1&list=RD5qq8ONq0hl8"
+    title="About you"
+    frameborder="1"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+<script>
+const letterDiv = document.getElementById("letter");
+
+window.onload = function() {
+    // Start typing letter after a short delay
+    setTimeout(showLetter, 1000);
+}
+
+function typeWriter(text, i = 0) {
+    if (i < text.length) {
+        letterDiv.innerHTML += text.charAt(i);
+        setTimeout(() => typeWriter(text, i + 1), 75);
+    }
+}
+
+function showLetter() {
+    const letter = `
+
+From the bottom of my heart, I'm glad to know you. Yes, my heart's broken, but meeting you allowed me to feel loved and cared for. You showed me what it's like to be someone's first priority. You taught me things in life that I'll always carry with me from now on. You showed me how to be Patient, mature, and how to communicate my feelings. These were the things in life I never knew about until I met you, and if I was given a chance to do it all over again, I would do it in a heartbeat, I would trade anything in this world. You were an unexpected surprise, the defining moment. The collision of stars that slammed into me hard and sent my neat little world plummeting into the ocean. I never expected it to be you, you know? But it is you. It's all you. And now there's no looking back. Meeting you was like listening to a song for the first time and knowing it would be my favorite.
+`;
+
+    typeWriter(letter);
+}
+</script>
+
+</body>
+</html>
 
 
 
